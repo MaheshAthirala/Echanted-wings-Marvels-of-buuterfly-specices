@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+  <h2>🦋 Prediction Result</h2>
+  <p><strong>Species:</strong> {{ species }}</p>
+  <p><strong>Confidence:</strong> {{ confidence }}%</p>
+  <img src="{{ image_url }}" alt="Butterfly Image" width="300">
+  <a href="input.html">🔄 Try Another</a>
+</body>
+</html>
